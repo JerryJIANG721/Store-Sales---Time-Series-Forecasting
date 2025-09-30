@@ -32,5 +32,3 @@ The dataset consists of the following CSV files:
 
 ---
 
-## Project Structure
-
