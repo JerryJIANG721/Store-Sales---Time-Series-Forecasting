@@ -51,7 +51,7 @@
 
 ## JL
 
-- [ ] 检查缺失值并填充（`oil.csv`, `transactions.csv`）
+- [x] 检查缺失值并填充（`oil.csv`, `transactions.csv`）
 - [ ] 生成是否促销特征（`onpromotion` 列）
 - [ ] 生成城市 × 商品交叉特征（`city` × `item_family`）
 - [ ] 保存清洗后的 CSV 文件
