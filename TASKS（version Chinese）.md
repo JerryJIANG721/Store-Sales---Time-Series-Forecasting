@@ -6,7 +6,7 @@
 ## ZXY
 
 - [x] 检查 `train.csv` 和 `test.csv` 的数据类型及缺失值（用 `df.info()` 和 `df.isnull().sum()`）
-- [ ] 转换 `date` 列为 datetime 类型（`pd.to_datetime()`）
+- [x] 转换 `date` 列为 datetime 类型（`pd.to_datetime()`）
 - [ ] 创建日期特征：year、month、weekday（基于 `date` 列）
 - [ ] 创建节假日特征（结合 `holidays_events.csv`，标记是否节假日、节假日类型）
 - [ ] 聚合 `transactions.csv`，计算每个 store 每天交易总量
