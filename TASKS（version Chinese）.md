@@ -28,7 +28,7 @@
 
 ## ZZN
 
-- [ ] 检查分类列并转换为 category（如 `store_type`, `item_family`）
+- [x] 检查分类列并转换为 category（如 `store_type`, `item_family`）
 - [ ] 生成交叉特征（store_type × item_family）
 - [ ] 标记连续促销天数（基于 `onpromotion` 列）
 - [ ] 归一化连续变量（如销售量、交易量）
