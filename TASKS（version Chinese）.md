@@ -5,8 +5,8 @@
 
 ## ZXY
 
-- [ ] 检查 `train.csv` 和 `test.csv` 的数据类型及缺失值（用 `df.info()` 和 `df.isnull().sum()`）
-- [ ] 转换 `date` 列为 datetime 类型（`pd.to_datetime()`）
+- [x] 检查 `train.csv` 和 `test.csv` 的数据类型及缺失值（用 `df.info()` 和 `df.isnull().sum()`）
+- [x] 转换 `date` 列为 datetime 类型（`pd.to_datetime()`）
 - [ ] 创建日期特征：year、month、weekday（基于 `date` 列）
 - [ ] 创建节假日特征（结合 `holidays_events.csv`，标记是否节假日、节假日类型）
 - [ ] 聚合 `transactions.csv`，计算每个 store 每天交易总量
@@ -28,7 +28,7 @@
 
 ## ZZN
 
-- [ ] 检查分类列并转换为 category（如 `store_type`, `item_family`）
+- [x] 检查分类列并转换为 category（如 `store_type`, `item_family`）
 - [ ] 生成交叉特征（store_type × item_family）
 - [ ] 标记连续促销天数（基于 `onpromotion` 列）
 - [ ] 归一化连续变量（如销售量、交易量）
