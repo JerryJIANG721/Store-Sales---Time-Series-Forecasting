@@ -30,7 +30,7 @@
 
 - [x] 检查分类列并转换为 category（如 `store_type`, `item_family`）
 - [ ] 生成交叉特征（store_type × item_family）
-- [ ] 标记连续促销天数（基于 `onpromotion` 列）
+- [ ] 标记连续促销天数（基于 `is_promo` 列）
 - [ ] 归一化连续变量（如销售量、交易量）
 - [ ] 绘制每个商品类别销售趋势（基于 `item_family` 聚合）
 - [ ] 绘制节假日销售对比图（`holidays_events.csv`）
@@ -52,8 +52,8 @@
 ## JL
 
 - [x] 检查缺失值并填充（`oil.csv`, `transactions.csv`）
-- [ ] 生成是否促销特征（`onpromotion` 列）
-- [ ] 生成城市 × 商品交叉特征（`city` × `item_family`）
+- [x] 生成是否促销特征（`onpromotion` 列）
+- [x] 生成城市 × 商品交叉特征（`city` × `item_family`）
 - [ ] 保存清洗后的 CSV 文件
 - [ ] 绘制每日每店铺销售趋势（`train.csv` 聚合）
 - [ ] 绘制 top 10 热销商品类别趋势
