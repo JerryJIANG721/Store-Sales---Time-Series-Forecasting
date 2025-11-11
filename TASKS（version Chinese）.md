@@ -7,12 +7,12 @@
 
 - [x] 检查 `train.csv` 和 `test.csv` 的数据类型及缺失值（用 `df.info()` 和 `df.isnull().sum()`）
 - [x] 转换 `date` 列为 datetime 类型（`pd.to_datetime()`）
-- [ ] 创建日期特征：year、month、weekday（基于 `date` 列）
-- [ ] 创建节假日特征（结合 `holidays_events.csv`，标记是否节假日、节假日类型）
-- [ ] 聚合 `transactions.csv`，计算每个 store 每天交易总量
-- [ ] 合并 `stores.csv` 到主表，加入 store_type、city 信息
-- [ ] 合并 `oil.csv` 到主表，加入当日油价特征
-- [ ] 合并 `holidays_events.csv` 到主表，加入节假日相关信息
+- [x] 创建日期特征：year、month、weekday（基于 `date` 列）
+- [x] 创建节假日特征（结合 `holidays_events.csv`，标记是否节假日、节假日类型）
+- [x] 聚合 `transactions.csv`，计算每个 store 每天交易总量
+- [x] 合并 `stores.csv` 到主表，加入 store_type、city 信息
+- [x] 合并 `oil.csv` 到主表，加入当日油价特征
+- [x] 合并 `holidays_events.csv` 到主表，加入节假日相关信息
 - [ ] 检查 `sales` 列的负值或异常值，并处理
 - [ ] 绘制总销售量随时间变化折线图（基于 `train.csv` 聚合数据）
 - [ ] 绘制不同店铺类型销售柱状图（`store_type` × 总销售）
