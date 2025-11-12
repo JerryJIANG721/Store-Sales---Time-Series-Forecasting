@@ -13,7 +13,7 @@
 - [x] 合并 `stores.csv` 到主表，加入 store_type、city 信息
 - [x] 合并 `oil.csv` 到主表，加入当日油价特征
 - [x] 合并 `holidays_events.csv` 到主表，加入节假日相关信息
-- [ ] 检查 `sales` 列的负值或异常值，并处理
+- [x] 检查 `sales` 列的负值或异常值，并处理
 - [ ] 绘制总销售量随时间变化折线图（基于 `train.csv` 聚合数据）
 - [ ] 绘制不同店铺类型销售柱状图（`store_type` × 总销售）
 - [ ] 绘制促销对销售的影响图（结合 `onpromotion` 列）
@@ -31,7 +31,7 @@
 - [x] 检查分类列并转换为 category（如 `store_type`, `item_family`）
 - [x] 生成交叉特征（store_type × item_family）
 - [x] 标记连续促销天数（基于 `is_promo` 列）
-- [ ] 归一化连续变量（如销售量、交易量）
+- [x] 归一化连续变量（如销售量、交易量）
 - [ ] 绘制每个商品类别销售趋势（基于 `item_family` 聚合）
 - [ ] 绘制节假日销售对比图（`holidays_events.csv`）
 - [ ] 绘制交易量与销售量热力图（`transactions.csv` 与 `train.csv`）
@@ -54,7 +54,7 @@
 - [x] 检查缺失值并填充（`oil.csv`, `transactions.csv`）
 - [x] 生成是否促销特征（`onpromotion` 列）
 - [x] 生成城市 × 商品交叉特征（`city` × `item_family`）
-- [ ] 保存清洗后的 CSV 文件
+- [x] 保存清洗后的 CSV 文件
 - [ ] 绘制每日每店铺销售趋势（`train.csv` 聚合）
 - [ ] 绘制 top 10 热销商品类别趋势
 - [ ] 分析周中销售差异

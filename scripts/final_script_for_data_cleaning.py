@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+from sklearn.preprocessing import MinMaxScaler
 
 # === 自动定位项目根目录 ===
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -31,6 +32,33 @@ train = train.merge(holidays[['date', 'type', 'description']], on='date', how='l
 train['is_holiday'] = train['type'].notnull().astype(int)
 train['holiday_type'] = train['type'].fillna('None')
 train['holiday_name'] = train['description'].fillna('')
+train.to_csv(CLEAN_DIR / "train_clean.csv", index=False)
+
+# === 处理 sales 列：负值与异常值（99%分位截断） ===
+train = pd.read_csv(CLEAN_DIR / "train_clean.csv", low_memory=False)
+if "sales" in train.columns:
+    train["sales"] = pd.to_numeric(train["sales"], errors="coerce")
+    median_sales = train["sales"].median()
+    train["sales"] = train["sales"].fillna(median_sales)
+    upper_limit = train["sales"].quantile(0.99)
+    train["sales"] = train["sales"].clip(lower=0, upper=upper_limit)
+train.to_csv(CLEAN_DIR / "train_clean.csv", index=False)
+
+# === 归一化连续变量（sales、transactions） ===
+scaler = MinMaxScaler()
+train = pd.read_csv(CLEAN_DIR / "train_clean.csv", low_memory=False)
+
+if "sales" in train.columns:
+    train["sales_norm"] = scaler.fit_transform(train[["sales"]])
+
+try:
+    transactions = pd.read_csv(CLEAN_DIR / "transactions_clean.csv", low_memory=False)
+    if "transactions" in transactions.columns:
+        transactions["transactions_norm"] = scaler.fit_transform(transactions[["transactions"]])
+        transactions.to_csv(CLEAN_DIR / "transactions_clean.csv", index=False)
+except FileNotFoundError:
+    pass
+
 train.to_csv(CLEAN_DIR / "train_clean.csv", index=False)
 
 # === test: 转换日期 ===
