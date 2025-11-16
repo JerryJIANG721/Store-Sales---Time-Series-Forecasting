@@ -32,10 +32,10 @@
 - [x] 生成交叉特征（store_type × item_family）
 - [x] 标记连续促销天数（基于 `is_promo` 列）
 - [x] 归一化连续变量（如销售量、交易量）
-- [ ] 绘制每个商品类别销售趋势（基于 `item_family` 聚合）
-- [ ] 绘制节假日销售对比图（`holidays_events.csv`）
-- [ ] 绘制交易量与销售量热力图（`transactions.csv` 与 `train.csv`）
-- [ ] 绘制油价与销售量散点图（`oil.csv` 与销售数据）
+- [x] 绘制每个商品类别销售趋势（基于 `item_family` 聚合）
+- [x] 绘制节假日销售对比图（`holidays_events.csv`）
+- [x] 绘制交易量与销售量热力图（`transactions.csv` 与 `train.csv`）
+- [x] 绘制油价与销售量散点图（`oil.csv` 与销售数据）
 - [ ] 构建时间序列模型（SARIMA 或 Prophet）预测销售
 - [ ] 训练 LightGBM 或 XGBoost 模型
 - [ ] 交叉验证与参数调优
