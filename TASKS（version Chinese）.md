@@ -36,8 +36,8 @@
 - [x] 绘制节假日销售对比图（`holidays_events.csv`）
 - [x] 绘制交易量与销售量热力图（`transactions.csv` 与 `train.csv`）
 - [x] 绘制油价与销售量散点图（`oil.csv` 与销售数据）
-- [ ] 构建时间序列模型（SARIMA 或 Prophet）预测销售
-- [ ] 训练 LightGBM 或 XGBoost 模型
+- [ ] 构建时间序列模型（SARIMA）预测销售
+- [ ] 训练 LightGBM
 - [ ] 交叉验证与参数调优
 - [ ] 对验证集生成预测
 - [ ] 计算 RMSLE 评价指标
@@ -60,8 +60,8 @@
 - [x] 分析周中销售差异
 - [x] 分析月份/季度销售差异
 - [ ] 构建基线模型
-- [ ] 训练时间序列模型（SARIMA/Prophet）
-- [ ] 训练机器学习模型（LightGBM/XGBoost）
+- [ ] 训练时间序列模型（Prophet）
+- [ ] 训练机器学习模型（XGBoost）
 - [ ] 对验证集生成预测
 - [ ] 输出 RMSLE 及误差分析
 - [ ] 对测试集生成预测
